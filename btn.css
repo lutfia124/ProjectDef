@@ -1,0 +1,31 @@
+#dbt:hover{
+			opacity: 0.4;
+			
+		}
+#cash:hover{
+			opacity: 0.4;
+		
+		}
+
+#btn :hover{
+			opacity: 0.6;
+		}
+
+#smpn :hover{
+			opacity: 0.6;
+		}
+
+#ttldbt :hover{
+			opacity: 0.6;
+		}
+
+#svdbt :hover{
+			opacity: 0.6;
+		}
+
+#totalnotacash :hover{
+			opacity: 0.6;
+		}
+#bank :hover{
+			opacity: 0.6;
+		}
