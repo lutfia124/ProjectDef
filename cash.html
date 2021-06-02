@@ -1,0 +1,113 @@
+<div id="kasir" style="display: none; background-color: rgb(206, 220, 224);">
+		<table>
+			<tr>
+				<td colspan="2"> <h2 style="text-align: center; "> Pembayaran Cash </h2> </td>
+			</tr>
+			<tr>
+				<td> <label for="barang" style="font-weight: bold; font-size: 30px;"> Nama Barang </lebel></td>
+				<td> <input type="text" name="barang" id="barang" style="width: 200px; height: 30px; font-size: 28px; font-weight: bold;"></td>
+			</tr>
+			<tr>
+				<td><label for="jumlah" style="font-weight: bold; font-size: 30px;"> jumlah Barang </lebel></td>
+				<td> <input type="number" name="jumlah" id="jumlah" value="1" style="width: 200px; height: 30px; font-size: 28px; font-weight: bold;"></td>
+			</tr>
+			<tr>
+				<td><label for="diskon" style="font-weight: bold; font-size: 30px;"> Diskon </lebel></td>
+				<td> <input type="number" name="diskon" id="diskon" style="width: 200px; height: 30px; font-size: 28px; font-weight: bold;"></td>
+			</tr>
+			<tr>
+				<td> <label for="uang" style="font-weight: bold; font-size: 30px;"> Pembayaran </lebel></td>
+				<td><input type="number" name="uang" id="uang" style="width: 200px; height: 30px; font-size: 28px; font-weight: bold;"></td>
+			</tr>
+			<tr id="smpn">
+				<td colspan="2"> <button type="button" onclick="hasil()" style="width: 100%; height: 30px; font-size: 22px; font-weight: bold; background-color: rgb(152, 201, 201); "> Simpan </button></td>
+			</tr>
+			<tr id="totalnotacash">
+				<td ><button  type="button" onclick="total()" style="width: 100%; height: 30px; font-size: 22px; font-weight: bold; background-color: rgb(152, 201, 201);"> Total </button></td>
+				<td> <button type="button" onclick="cetaknota()" style="width: 100%; height: 30px; font-size: 22px; font-weight: bold; background-color: rgb(152, 201, 201);"> Cetak Nota </button></td>
+			</tr>
+		</table>
+		<br>
+		<table style="font-size: 28px; font-weight: bold;">
+			<tr>
+				<th> Nama </th>
+				<th> Jumlah </th>
+				<th> Harga </th>
+			</tr>
+			<tr>
+				<td id="namabarang"> 1.  </td>
+				<td id="jumlahbarang"> 0 </td>
+				<td id="hargabarang"> Rp. 000 </td>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: left;"> Total Harga </th>
+				<td id="totalbarang"> Rp. 000 </td>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: left; text-decoration: underline;"> Pembayaran </th>
+				<td id="uangplg" style="text-decoration: underline;"> Rp. 000 </td>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: left; text-decoration: underline;"> Potongan </th>
+				<td id="diskonh" style="text-decoration: underline;"> Rp. 000 </td>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: left; text-decoration: underline;"> Kembalian </th>
+				<td id="kembalian" style="text-decoration: underline;"> Rp. 000</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="nota" style="display: none;">
+		<h2> TOKO UTM </h2>
+		<table style="border: 1px solid black; background-color: rgb(206, 220, 224);">
+			<tr>
+				<td> Tanggal </td>
+				<td id="tanggalpembeli" colspan="2"></td>
+			</tr>
+			<tr>
+				<td> Nama </td>
+				<td id="namapembeli" colspan="2"></td>
+			</tr>
+			<tr>
+				<td> Alamat </td>
+				<td id="alamatpembeli" colspan="2"></td>
+			</tr>
+			<tr>
+				<td> No Telp </td>
+				<td id="telppembeli" colspan="2"></td>
+			</tr>
+			<tr>
+				<td colspan="3"> ------------------Pembelian------------------- </td>
+			</tr>
+			<tr>
+				<th> Nama </th>
+				<th> Jumlah </th>
+				<th> Harga </th>
+			</tr>
+			<tr>
+				<td id="notanamabarang"> 1.  </td>
+				<td id="notajumlahbarang"> 0 </td>
+				<td id="notahargabarang"> Rp. 000 </td>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: left;"> Total Harga </th>
+				<td id="notatotalbarang"> Rp. 000 </td>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: left; text-decoration: underline;"> Pembayaran </th>
+				<td id="notauangplg" style="text-decoration: underline;"> Rp. 000 </td>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: left; text-decoration: underline;"> Potongan </th>
+				<td id="diskonp" style="text-decoration: underline;"> Rp. 000 </td>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: left; text-decoration: underline;"> Kembalian </th>
+				<td id="notakembalian" style="text-decoration: underline;"> Rp. 000</td>
+			</tr>
+			<tr>
+				<td colspan="3"> Terimakasih sudah berbelanja di toko kami </td>
+			</tr>
+		</table>
+	</div>
