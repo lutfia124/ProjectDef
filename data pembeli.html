@@ -1,0 +1,33 @@
+<body>
+
+	<div id="datapembeli">
+		<table>
+			<tr>
+				<td> <label for="nama" style="font-weight: bold; font-size: 30px;"> Nama </label> </td>
+				<td> <input type="text" name="username" id="username" style="width: 200px; height: 30px; font-size: 28px; font-weight: bold;"> </td>
+			</tr>
+			<tr>
+				<td> <label for="tanggal" style="font-weight: bold; font-size: 30px;"> Tanggal</label> </td>
+				<td> <input type="date" name="tanggal" id="tanggal" style="width: 200px; height: 30px; font-size: 22px; font-weight: bold;"> </td>
+			</tr>
+			<tr>
+				<td> <label for="alamat" style="font-weight: bold; font-size: 30px;"> Alamat </label> </td>
+				<td> <input type="text" name="alamat" id="alamat" style="width: 200px; height: 30px; font-size: 28px; font-weight: bold;"> </td>
+			</tr>
+			<tr>
+				<td> <label for="telp" style="font-weight: bold; font-size: 30px;"> No Telp </label}> </td>
+				<td> <input type="number" name="telp" id="telp" style="width: 200px; height: 30px; font-size: 28px; font-weight: bold;"> </td>
+			</tr>
+			<tr>
+				<td id="btn"  colspan="2" style="text-align: center;">
+					<button type="button" onclick="kemetode()" style="width: 150px; height: 30px; font-size: 22px; font-weight: bold; cursor: pointer; background-color: rgb(152, 201, 201); "> Selanjutnya </button>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div id="metodepembayaran" style="display: none;">
+		<button id="dbt" type="button" onclick="kedebit()" style="font-size: 40px; cursor: pointer; padding: 5px; border-radius: 50px; background-color: rgb(152, 201, 201);"> DEBIT </button>
+		<button id="cash" type="button" onclick="kecash()" style="font-size: 40px; cursor: pointer; padding: 5px; border-radius: 50px; background-color: rgb(152, 201, 201);"> CASH </button>
+	</div>
