@@ -66,6 +66,8 @@ function savedebit(){
 		document.getElementById('notajumlahbarangbca').innerHTML = jmlhbrg;
 		document.getElementById('notahargabarangbca').innerHTML = hrgbrg;
 		document.getElementById('notatotalbarangbca').innerHTML = "Rp. " + nlbrg;
+	 	document.getElementById('barangdebit').value = " ";
+	
 	}
 
 	function totaldebit(){
